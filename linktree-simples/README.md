@@ -24,17 +24,3 @@ Nao existe uma tabela separada de perfis. O perfil e identificado pelo campo ape
 na tabela links. Ao cadastrar links com o mesmo apelido, eles aparecem juntos na
 pagina publica daquele apelido. Exemplo: todos os registros com apelido "fulano"
 aparecem em http://localhost/lkt/?a=fulano.
-
-FUNCIONALIDADES
-Parte 1: banco de dados, listagem publica por apelido e inclusao de links.
-Parte 2: alteracao e exclusao de links.
-Parte 3: login administrativo e protecao das operacoes administrativas por sessao.
-
-OBSERVACOES
-- Projeto procedural: nao utiliza classes nem arquitetura MVC.
-- O acesso ao MySQL utiliza PDO com consultas preparadas.
-- A senha administrativa e salva com password_hash e validada com password_verify.
-- A URL e chave primaria, conforme o enunciado; por isso nao pode se repetir.
-- O layout usa Pico CSS por CDN; e necessaria conexao com a internet para carregar o estilo.
-- O projeto nao implementa token CSRF, conforme a simplificacao solicitada.
-- Para producao, configure HTTPS e remova ou proteja o script criar_admin.php depois de criar o administrador.
